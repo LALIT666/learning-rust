@@ -1,53 +1,12 @@
-   0.006008333s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="while_loops"}: cargo::core::compiler::fingerprint: fingerprint error for day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1)/Check { test: false }/TargetInner { name: "while_loops", doc: true, ..: with_path("/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/src/bin/while_loops.rs", Edition2024) }
-   0.006032916s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="while_loops"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/target/debug/.fingerprint/day-1-78ede2db1e1bc262/bin-while_loops`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: std::backtrace::Backtrace::create
-   1: std::backtrace::Backtrace::capture
-   2: cargo_util::paths::read_bytes
-   3: cargo_util::paths::read
-   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   5: cargo::core::compiler::fingerprint::prepare_target
-   6: cargo::core::compiler::compile
-   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   8: cargo::ops::cargo_compile::compile_ws
-   9: cargo::ops::cargo_compile::compile_with_exec
-  10: cargo::ops::cargo_compile::compile
-  11: cargo::commands::check::exec
-  12: <cargo::cli::Exec>::exec
-  13: cargo::main
-  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  15: std::rt::lang_start::<()>::{closure#0}
-  16: std::rt::lang_start_internal
-  17: _main
-   0.009195791s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="while_loops"}: cargo::core::compiler::fingerprint: fingerprint error for day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1)/Check { test: true }/TargetInner { name: "while_loops", doc: true, ..: with_path("/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/src/bin/while_loops.rs", Edition2024) }
-   0.009204833s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="while_loops"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/target/debug/.fingerprint/day-1-ab0e828adce71073/test-bin-while_loops`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: std::backtrace::Backtrace::create
-   1: std::backtrace::Backtrace::capture
-   2: cargo_util::paths::read_bytes
-   3: cargo_util::paths::read
-   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   5: cargo::core::compiler::fingerprint::prepare_target
-   6: cargo::core::compiler::compile
-   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   8: cargo::ops::cargo_compile::compile_ws
-   9: cargo::ops::cargo_compile::compile_with_exec
-  10: cargo::ops::cargo_compile::compile
-  11: cargo::commands::check::exec
-  12: <cargo::cli::Exec>::exec
-  13: cargo::main
-  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  15: std::rt::lang_start::<()>::{closure#0}
-  16: std::rt::lang_start_internal
-  17: _main
+   0.004248416s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="for_loop"}: cargo::core::compiler::fingerprint: stale: changed "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/src/bin/for_loop.rs"
+   0.004259000s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="for_loop"}: cargo::core::compiler::fingerprint:           (vs) "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/target/debug/.fingerprint/day-1-918201d46647f8ec/dep-bin-for_loop"
+   0.004262875s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="for_loop"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1779948810, nanos: 116102752 } < FileTime { seconds: 1779948812, nanos: 611874807 }
+   0.004302416s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="for_loop"}: cargo::core::compiler::fingerprint: fingerprint dirty for day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1)/Check { test: false }/TargetInner { name: "for_loop", doc: true, ..: with_path("/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/src/bin/for_loop.rs", Edition2024) }
+   0.004312250s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="for_loop"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/target/debug/.fingerprint/day-1-918201d46647f8ec/dep-bin-for_loop", reference_mtime: FileTime { seconds: 1779948810, nanos: 116102752 }, stale: "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/src/bin/for_loop.rs", stale_mtime: FileTime { seconds: 1779948812, nanos: 611874807 } }))
+   0.004496166s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="for_loop"}: cargo::core::compiler::fingerprint: stale: changed "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/src/bin/for_loop.rs"
+   0.004499541s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="for_loop"}: cargo::core::compiler::fingerprint:           (vs) "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/target/debug/.fingerprint/day-1-e08b7cdca88dac48/dep-test-bin-for_loop"
+   0.004501875s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="for_loop"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1779948810, nanos: 116223794 } < FileTime { seconds: 1779948812, nanos: 611874807 }
+   0.004530375s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="for_loop"}: cargo::core::compiler::fingerprint: fingerprint dirty for day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1)/Check { test: true }/TargetInner { name: "for_loop", doc: true, ..: with_path("/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/src/bin/for_loop.rs", Edition2024) }
+   0.004535500s  INFO prepare_target{force=false package_id=day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1) target="for_loop"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/target/debug/.fingerprint/day-1-e08b7cdca88dac48/dep-test-bin-for_loop", reference_mtime: FileTime { seconds: 1779948810, nanos: 116223794 }, stale: "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1/src/bin/for_loop.rs", stale_mtime: FileTime { seconds: 1779948812, nanos: 611874807 } }))
     Checking day-1 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-1)
-error: could not compile `day-1` (bin "while_loops") due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
