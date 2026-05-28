@@ -1,5 +1,10 @@
 fn main() {
   
+    for z in (0..=10).rev().step_by(2) {
+        println!("hello this is dec rust for loop : {}", z);
+    }
+
+  
   // 1 to 5 
   for i in 1..6 {
   println!("i is: {}", i);
@@ -23,4 +28,6 @@ for i in 1..=10 {
   }
   println!("i is: {}", i);
 }
+
+
 }
