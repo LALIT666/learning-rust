@@ -21,15 +21,14 @@ fn main() {
         "BAD LINE WITHOUT COLON".into(),
     ];
 
-    let mut warn_count = 0;
-    let mut error_count = 0;
-    let mut unknown_count = 0;
+    let mut warn_count: usize = 0;
+    let mut error_count: usize = 0;
+    let mut unknown_count: usize = 0;
 
-    let  report  = "";
-    let len_logs = logs.len().try_into().unwrap();
+    let mut report  =  String::new();
    
 
-    for line in logs {
+    for line in &logs {
       
         show(line);
 
@@ -38,17 +37,18 @@ fn main() {
         match lvl {
             "WARN" => warn_count += 1,
             "ERROR" => error_count += 1,
-            _ => unknown_count = 1, // logical bug (compile ho jayega but wrong)
+            "INFO" => {}, 
+            _ => unknown_count += 1, // logical bug (compile ho jayega but wrong)
         }
 
         if line.len() > MAX_LINE {
-            report.to_string().push_str("LONG\n");
+            report.push_str("LONG\n");
         } else {
-            report.to_string().push_str("OK\n");
+            report.push_str("OK\n");
         }
     }
 
-    let total: i32 = len_logs;
+    let total = logs.len();
     println!("total={total}, warn={warn_count}, error={error_count}, unknown={unknown_count}");
     println!("report:\n{report}");
 }
