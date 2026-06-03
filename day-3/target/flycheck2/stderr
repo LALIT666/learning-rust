@@ -1,12 +1,32 @@
-   0.003612833s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe2"}: cargo::core::compiler::fingerprint: stale: changed "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/src/bin/debugging_exe2.rs"
-   0.003625083s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe2"}: cargo::core::compiler::fingerprint:           (vs) "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/target/debug/.fingerprint/day-3-517b746d60a83ac2/dep-bin-debugging_exe2"
-   0.003628375s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe2"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1780499561, nanos: 600634149 } < FileTime { seconds: 1780499563, nanos: 510235902 }
-   0.003665208s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe2"}: cargo::core::compiler::fingerprint: fingerprint dirty for day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3)/Check { test: false }/TargetInner { name: "debugging_exe2", doc: true, ..: with_path("/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/src/bin/debugging_exe2.rs", Edition2024) }
-   0.003674167s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe2"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/target/debug/.fingerprint/day-3-517b746d60a83ac2/dep-bin-debugging_exe2", reference_mtime: FileTime { seconds: 1780499561, nanos: 600634149 }, stale: "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/src/bin/debugging_exe2.rs", stale_mtime: FileTime { seconds: 1780499563, nanos: 510235902 } }))
-   0.003839042s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe2"}: cargo::core::compiler::fingerprint: stale: changed "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/src/bin/debugging_exe2.rs"
-   0.003842208s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe2"}: cargo::core::compiler::fingerprint:           (vs) "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/target/debug/.fingerprint/day-3-5b464ff16402af5f/dep-test-bin-debugging_exe2"
-   0.003844458s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe2"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1780499561, nanos: 600628816 } < FileTime { seconds: 1780499563, nanos: 510235902 }
-   0.003871542s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe2"}: cargo::core::compiler::fingerprint: fingerprint dirty for day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3)/Check { test: true }/TargetInner { name: "debugging_exe2", doc: true, ..: with_path("/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/src/bin/debugging_exe2.rs", Edition2024) }
-   0.003876583s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe2"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/target/debug/.fingerprint/day-3-5b464ff16402af5f/dep-test-bin-debugging_exe2", reference_mtime: FileTime { seconds: 1780499561, nanos: 600628816 }, stale: "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/src/bin/debugging_exe2.rs", stale_mtime: FileTime { seconds: 1780499563, nanos: 510235902 } }))
+   0.004221667s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe3"}: cargo::core::compiler::fingerprint: fingerprint error for day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3)/Check { test: false }/TargetInner { name: "debugging_exe3", doc: true, ..: with_path("/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/src/bin/debugging_exe3.rs", Edition2024) }
+   0.004240458s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe3"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/target/debug/.fingerprint/day-3-5efa18db2a5b308a/bin-debugging_exe3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+   0.006973958s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe3"}: cargo::core::compiler::fingerprint: stale: changed "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/src/bin/debugging_exe3.rs"
+   0.006978083s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe3"}: cargo::core::compiler::fingerprint:           (vs) "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/target/debug/.fingerprint/day-3-b893cb5a2a03c3a5/dep-test-bin-debugging_exe3"
+   0.006980417s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe3"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1780499764, nanos: 349993520 } < FileTime { seconds: 1780500515, nanos: 640434001 }
+   0.007033375s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe3"}: cargo::core::compiler::fingerprint: fingerprint dirty for day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3)/Check { test: true }/TargetInner { name: "debugging_exe3", doc: true, ..: with_path("/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/src/bin/debugging_exe3.rs", Edition2024) }
+   0.007039000s  INFO prepare_target{force=false package_id=day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3) target="debugging_exe3"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/target/debug/.fingerprint/day-3-b893cb5a2a03c3a5/dep-test-bin-debugging_exe3", reference_mtime: FileTime { seconds: 1780499764, nanos: 349993520 }, stale: "/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3/src/bin/debugging_exe3.rs", stale_mtime: FileTime { seconds: 1780500515, nanos: 640434001 } }))
     Checking day-3 v0.1.0 (/Users/choudhary/Documents/PROJECTS/RUST/learning-rust/day-3)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.03s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
