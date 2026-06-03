@@ -18,4 +18,31 @@ let name_ref = &mut name;
 name_ref.push_str(" Doe");
 
 println!("{}", name_ref); // John Doe
+
+
+//Example 1
+fn print_length(s: &String)  {
+  println!("Length of the string : {}", s.len());
 }
+
+let my_string = String::from("Namastae");
+print_length(&my_string); // yaha par mene refrence bheja hai okay 
+println!("my string: {}", my_string);
+
+
+
+//Example 2
+fn add_word(s: &mut String) {
+  s.push_str("World");
+}
+
+let mut greetings = String::from("Hello ");
+add_word(&mut greetings);
+println!("{} ", greetings);
+
+
+
+
+}
+
+

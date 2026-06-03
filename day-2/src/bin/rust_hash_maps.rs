@@ -12,7 +12,8 @@ fn main() {
   capital_city.insert("Germany", "Berlin");
   capital_city.insert("Norway", "Oslo");
 
-  println!("{:?}", capital_city);
+  println!("this is without  --> {:?}", capital_city);
+  println!("this is with # --> {:#?}", capital_city);
 
   //Access Values -- .get()
 
